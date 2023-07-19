@@ -55,17 +55,14 @@
     
 }
 
+
 .follow-container{
     background-color: rgb(212, 205, 205);
-    padding: 15px 10px;
-    
+    padding: 15px 8px;
+     
 }
 
-.follow-container fa-brands{
-    width: 100%;
-    padding: 20px;
-   
-}
+
 /*Media query for responsiveness*/
 @media screen and (max-width: 600px) {
     .logo-text {
@@ -143,7 +140,6 @@
         margin-bottom: 420px;
         padding:  40px 60px;
         
-   
   }
   
   .banner-one-text{
@@ -162,6 +158,7 @@
   .banner-one-text h1{
     font-size: 40px;
   }
+
   .banner-one-text p{
     font-size: 18px;
     margin-top: 14px;
@@ -176,25 +173,35 @@
     display: flex;
     justify-content: space-around;
     gap: 30px;
-    
-    
+     
   }
 
-  .img-one{
-    
-  }
-  .img-two{
-
-  }
-  .img-three: hover fa-thin {
+  .img-three-container {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
-    background-color: rgb(43, 33, 33);
-
-  }
-  .img-four{
+    background: linear-gradient(to right top, rgb(95, 89, 89));
 
   }
 
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Hover effect: Show the play button on hover */
+  .image-container:hover .play-button {
+    opacity: 1;
+    cursor: pointer;
+    background: linear-gradient(to right top, rgb(95, 89, 89));
+  }
+  
   .banner-two-section{
       margin-bottom: 70px;
   }
@@ -251,18 +258,39 @@
   }
 
   .games-container{
-        
+        margin: 5px 80px;
         display: grid;
-        grid-template-rows: repeat(5,70px);
+        grid-template-rows: repeat(5,50px);
         grid-gap: 30px;
+        padding-top: 150px;
   }
 
+  .games-container img{
+      width: 60px;
+  }
+
+  .games-container span{
+        font-size: 20px;
+        text-align: center;
+  }
+  .games-container-1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+  }
+
+  .games-container-2{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    text-align: center;
+}
 
   .footer-container{
-    background-color: black;
-    padding: 100px;
+    background-color: rgb(27, 25, 59);
+    padding: 180px;
     color: #FFF;  
-    margin-top: 170px;
+    
   }
 
   .icons{
@@ -277,6 +305,25 @@
   }
   .fa-brands {
     margin-left: 20px;
+  }
+
+  .footer-menu-01 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    column-gap: 20px;
+    
+  }
+
+  .footer-menu-02 ul{
+    font-size: small;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    column-gap: 20px;
+    
   }
  
   
