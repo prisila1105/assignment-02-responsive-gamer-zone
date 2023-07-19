@@ -55,15 +55,12 @@
     
 }
 
-
 .follow-container{
     background-color: rgb(212, 205, 205);
     padding: 15px 8px;
      
 }
 
-
-/*Media query for responsiveness*/
 @media screen and (max-width: 600px) {
     .logo-text {
       font-size: 24px;
@@ -90,6 +87,7 @@
     font-size: 25px;
     font-weight: 530px;
   }
+  
   .funny-big-vd{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -180,7 +178,7 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
-    background: linear-gradient(to right top, rgb(95, 89, 89));
+    
 
   }
 
@@ -195,12 +193,12 @@
     transition: opacity 0.3s ease;
   }
 
-  /* Hover effect: Show the play button on hover */
   .image-container:hover .play-button {
     opacity: 1;
     cursor: pointer;
     background: linear-gradient(to right top, rgb(95, 89, 89));
   }
+
   
   .banner-two-section{
       margin-bottom: 70px;
@@ -217,7 +215,7 @@
     margin-left: 50px;
   }
 
-  .banner-two-text h2 p{
+  .banner-two-text h2 {
      text-align: center;
      margin-right: 150px;
      justify-content: center;
@@ -229,6 +227,16 @@
     font-weight: bolder;
     padding: 40px;
     
+  }
+
+  .banner-two-text p {
+    text-align: center;
+    line-height: 22px;
+    
+  }
+
+  .banner-two-text{
+        text-align: center;
   }
 
   .two-img{
@@ -285,6 +293,12 @@
     margin-left: 40px;
     text-align: center;
 }
+
+  .games-container :hover{
+    cursor: pointer;
+    border-radius: 20px;
+    color: #F948B2;
+  }
 
   .footer-container{
     background-color: rgb(27, 25, 59);
