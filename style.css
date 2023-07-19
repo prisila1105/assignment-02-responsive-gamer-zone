@@ -1,33 +1,41 @@
+*{
+    margin: 0;
+}
+
 .navbar-container{
-    background-color: rgb(245, 241, 241);
+    background-color: #FFF;
     display: flex;
     align-items: center;
     min-height: 50px;
+    padding: 20px;
  
 }
 .logo-container{
     display: flex;
-    width: 50%;
     align-items: center;
     flex-grow: 1;
 }
-.logo-container img{
+.logo{
+    margin-right: 20px;
+}
+.logo img{
     width: 50px;
     height: 50px;
     object-fit: cover;
-    margin-right: 20px;
    
 }
 
 .logo-container p{
     font-size: 30px;
-    margin: 0;
+    font-weight: bold;
+    margin-left: 10px;
+    
+        
 }
 .logo-color{
     color: #FF42A5;
 }
 .menu-container{
-    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,4 +43,18 @@
 .menu-container a{
     text-decoration: none;
     font-size: 20px;
+    margin: 20px;
+    margin-left: 10px;
 }
+
+.follow-container{
+    background-color: rgb(212, 205, 205);
+    padding: 20px;
+}
+/*Media query for responsiveness*/
+@media screen and (max-width: 600px) {
+    .logo-text {
+      font-size: 24px;
+    }
+  }
+  
